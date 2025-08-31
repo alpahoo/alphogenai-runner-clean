@@ -7,7 +7,6 @@ import ffmpeg
 import boto3
 from dotenv import load_dotenv
 
-# Charger les variables d’environnement
 load_dotenv()
 
 def generate_voice_french(text, output_file="narration.wav"):
@@ -81,5 +80,8 @@ def process_job(prompt):
         send_webhook(job_id, "error", error=str(e))
 
 if __name__ == "__main__":
-    prompt = "Un dauphin guide un bateau perdu vers le rivage."
-    process_job(prompt)
+    import sys
+    if len(sys.argv) > 1:
+        process_job(sys.argv[1])
+    else:
+        process_job("Un dauphin guide un bateau perdu vers le rivage.")
