@@ -1,0 +1,51 @@
+# Environnements virtuels Python
+.venv/
+venv/
+env/
+
+# Fichiers de cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+.yarn/
+.pnpm/
+
+# Éditeurs de code
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers volumineux (évite les erreurs GitHub)
+*.dll
+*.lib
+*.whl
+*.zip
+*.tar.gz
+*.exe
+*.msi
+*.dmg
+*.iso
+
+# Logs
+logs
+*.log
+
+# Variables d’environnement
+.env
+.env.local
+.env.production.local
+.env.development.local
